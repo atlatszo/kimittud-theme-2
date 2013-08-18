@@ -1,7 +1,7 @@
 # Install hook code here
 
 plugin_path = File.expand_path(File.join(File.dirname(__FILE__), "public"))
-main_app_path = File.join(RAILS_ROOT, 'public', 'kimittud-theme-2')
+main_app_path = Rails.root.join('public', 'kimittud-theme-2')
 
 # If the symlink to be created exists, warn the user and do nothing
 if File.exists?(main_app_path)
