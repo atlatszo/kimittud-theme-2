@@ -1,4 +1,5 @@
-THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1]
+#THEME_NAME = File.split(File.expand_path("../..", __FILE__))[1]
+THEME_NAME = "kimittud-theme-2"
 
 class ActionController::Base
     # The following prepends the path of the current theme's views to
