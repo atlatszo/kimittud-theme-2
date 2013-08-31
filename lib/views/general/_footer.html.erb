@@ -1,0 +1,27 @@
+<div id="footercontainer">
+ <footer class="site-footer row clearfix" role="contentinfo">
+  <div class="col grid_4_of_12">
+    <h3>Impresszum</h3>
+    <p>A KiMitTud motorja az <a href="http://www.alaveteli.org/">Alaveteli</a></p>
+    <p>Üzemelteti az <a href="http://atlatszo.hu/">atlatszo.hu</a> <img src="/kimittud-theme-2/images/atlatszo-16.png" alt="atlatszo icon" class="twitter-icon"></p>
+    <p>Elindítását az <a href="http://www.soros.org/">Open Society Institute</a> támogatta <img src="/kimittud-theme-2/images/osi-16.png" alt="OSI icon" class="twitter-icon"></p>
+  </div>
+  <div class="col grid_4_of_12">
+    <h3>Lokalizáció</h3>
+    <p>Szoftver: Claymanus</p>
+    <p>Design:            </p>
+    <p>Fordítás: Ebatta</p>
+    <p>html5 css3</p>
+  </div>
+  <div class="col grid_4_of_12">
+    <h3>Kapcsolat</h3>
+    <p> <%= link_to _("Contact {{site_name}}", :site_name => site_name), help_contact_url %></p>
+    <p><img src="/images/twitter-16.png" alt="twitter icon" class="twitter-icon"><a href="http://www.twitter.com/<%= MySociety::Config.get('TWITTER_USERNAME') %>"> <%= _("Follow us on twitter") %></a></p>
+    <p><img src="/kimittud-theme-2/images/facebook-16.png" alt="facebook icon" class="twitter-icon"> Csatlakozzon hozzánk a <a href="http://www.facebook.com/kimittud">facebook</a>-on</p>
+  </div>
+ </footer>
+ <div class="after-footer"><div class="col grid_12_of_12">
+    <p><strong>Nevezd meg! - Így add tovább! CC BY-SA 2.5</strong></p></div>
+  </div>
+</div>
+</dov> <!-- footercontainer -->

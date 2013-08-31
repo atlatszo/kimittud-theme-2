@@ -1,0 +1,29 @@
+<% # TODO: Cache for 5 minutes %>
+<div class="row grid_12_of_12">
+  <div id="frontpage_search_box" class="col grid_3_of_12">
+    <%= render :partial => "frontpage_search_box" %>
+  </div>
+  <div id="" class="col grid_6_of_12">
+    <%= render :partial => "frontpage_new_request" %>
+  </div>
+  <div id="facebook" class="col grid_3_of_12">
+    <img src="/kimittud-theme-2/images/facebook.png"> Kövess minket a facebookon!
+<iframe style="background-color: white; min-height: 250px;" src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FKiMitTud&amp;width=235&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:235px; height:258px;" allowTransparency="true"></iframe>  </div>
+</div>
+<div id="frontpage_mid" class="row grid_12_of_12">
+  <div id="frontpage_video" class="col grid_8_of_12">
+     <div style="padding-top:58%"></div>
+     <iframe id="video_frame" src="http://player.vimeo.com/video/42965733" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  </div>
+  <div id="frontpage_intro_sentence" class="col grid_4_of_12">
+    <%= render :partial => 'frontpage_intro_sentence'  %>
+  </div>  
+</div>
+<div id="" class="row grid_12_of_12">
+  <div id="" class="row grid_6_of_12">
+    <%= render :partial => "frontpage_bodies_list" %>  
+  </div>
+  <div id="" class="row grid_6_of_12">
+    <%= render :partial => "frontpage_requests_list" %>  
+  </div>
+</div>
