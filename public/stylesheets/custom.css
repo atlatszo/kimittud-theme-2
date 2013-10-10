@@ -1790,11 +1790,11 @@ border-radius: 5px;
 .main-small-navigation a, .main-navigation a {
 	display: block;
 	text-decoration: none;
-	color: #ae1726; /* Nav bar link color */
+	color: white; /* Nav bar link color */
 }
 
 .main-navigation li:hover > a {
-	color: white; /* Nav bar link color on hover */
+	color: #e00000; /* Nav bar link color on hover */
 }
 
 .main-navigation li.selected a{
@@ -1833,6 +1833,7 @@ padding: 1rem 1rem;
 .single {
 padding: 15px 15px;
 padding: 1rem 1rem;
+display: inline-block;
 }
 
 #facebook {
@@ -1852,6 +1853,10 @@ color: white;
 }
 
 #frontpage_search_box {
+display: inline-block;
+}
+.darkgreen
+{
 background: #019934; /* Old browsers */
 background: -moz-linear-gradient(top,  #019934 1%, #026732 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#019934), color-stop(100%,#026732)); /* Chrome,Safari4+ */
@@ -1861,13 +1866,22 @@ background: -ms-linear-gradient(top,  #019934 1%,#026732 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #019934 1%,#026732 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34609d', endColorstr='#10305f',GradientType=0 ); /* IE6-9 */
 border-bottom: solid 5px #01421f;
-padding: 15px 15px;
-padding: 1rem 1rem;
+padding:  0 15px;
+padding:  0 1rem;
 color: white;
-display: inline-block;
 }
 
-#frontpage_mid {
+
+.darkgreen p, .darkgreen a, .darkgrey p, .darkgrey a {
+font-size: 20px;
+font-size: 1.3rem;
+color: white;
+}
+
+#frontpage_mid
+{min-height: 250px;}
+
+.darkgray {
 background: #5a5a5a; /* Old browsers */
 background: -moz-linear-gradient(top,  #5a5a5a 1%, #353535 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#5a5a5a), color-stop(100%,#353535)); /* Chrome,Safari4+ */
@@ -1878,7 +1892,12 @@ background: linear-gradient(to bottom,  #5a5a5a 1%,#353535 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34609d', endColorstr='#10305f',GradientType=0 ); /* IE6-9 */
 border-bottom: solid 5px #161616;
 display:inline-block;
-min-height: 250px;
+padding: 0 15px;
+padding: 0 1rem;
+color: white;
+}
+
+.darkgray h2, .darkgreen h2 {
 color: white;
 }
 
@@ -1888,8 +1907,8 @@ top: 0;
 bottom: 0;
 left: 0;
 right: 0;
-padding: 15px 0 15px 15px;
-padding: 1rem 0 1rem 1rem;
+padding: 15px 0 15px 0px;
+padding: 1rem 0 1rem 0rem;
 width: 100%;
 height: 100%;
 }
@@ -2010,12 +2029,28 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 	font-family: 'DeliciousHeavyRegular', '_DeliciousHeavyRegular', Arial, sans-serif;
 }
 
+  .help-nav_ {
+  display:none; 
+
+  background-color: #f0f0f0;
+border-bottom: solid 5px #aaa;
+}
+
+.right {
+position: absolute;
+bottom:0;
+right:0;
+height: 100%;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */
 
 /*  Breakpoints are set based on the design, not based on device sizes */
 @media only screen and (max-width: 1100px) {
+
+  
   #atlatszo {
   width: 440px;
   }
@@ -2034,12 +2069,14 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 }
 
 @media only screen and (max-width: 980px) {
+
 	.main-navigation {
 
 	}
 }
 
 @media only screen and (max-width: 900px) {
+
 	.banner .grid_6_of_12 {
 		width: 100%; 
 	}
@@ -2052,6 +2089,10 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 }
 
 @media only screen and (max-width: 800px) {
+
+  html{
+    font-size: 78.5%;
+  }
 
 	header .grid_5_of_12 {
 		width: 100%; 
@@ -2078,6 +2119,9 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 
 /*  Go full Width at less than 650px */
 @media only screen and (max-width: 650px) {
+  .help-nav {display:none;}
+
+  .help-nav_ {display:block;}
 	.grid_1_of_12,
 	.grid_2_of_12,
 	.grid_3_of_12,
@@ -2092,6 +2136,10 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 	.grid_12_of_12 {
 		width: 100%; 
 	}
+	.right {
+position: static;
+height: auto;
+}
 	.col {
 		margin: 0;
 	}
@@ -2107,6 +2155,10 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 
 /*  Adjust the menu at less than 520px */
 @media only screen and (max-width: 520px) {
+
+  .help-nav {display:none;}
+
+  .help-nav_ {display:block;}
   #atlatszo {
   width: 100%;
   }
@@ -2117,7 +2169,7 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 	.main-small-navigation .nav-menu ul,
 	.nav-menu,
 	.nav-menu ul {
-		padding: 0;
+		padding: 0 1rem 0 1rem;
 	}
 	.main-small-navigation,
 	.main-navigation li {
@@ -2148,6 +2200,29 @@ background: linear-gradient(top,  #009933 50%,#006633 100%);
 	}
 }
 
+.left {float: left;}
+.right {float: right;}
+
+dt {line-height: 1;}
+
+.menu-toggle:after {
+content: "\f502";
+font-size: 12px;
+padding-left: 8px;
+vertical-align: -4px;
+}
+
+.toggled-on .menu-toggle:after {
+content: "\f500";
+vertical-align: 2px;
+}
+
+.menu-toggle:after {
+-webkit-font-smoothing: antialiased;
+display: inline-block;
+font: normal 16px/1 Genericons;
+vertical-align: text-bottom;
+}
 
 /* ==========================================================================
    Non-semantic helper classes from HTML5 Boilerplate

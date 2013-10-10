@@ -1,6 +1,7 @@
-<p><span class="big"><%= InfoRequest.visible.count %> adatigénylés</span> és 
-<span class="big"><%= PublicBody.visible.count%> adatgazda</span> szerepel pillanatnyilag a rendszerünkben.</p>
-<form id="search_form" method="post" action="<%= search_redirect_path %>">
+<div id="frontpage_search_box" class="col grid_3_of_12 darkgreen">
+  <p><span class="big"><%= InfoRequest.visible.count %> adatigénylés</span> és 
+  <span class="big"><%= PublicBody.visible.count%> adatgazda</span> szerepel pillanatnyilag a rendszerünkben.</p>
+  <form id="search_form" method="post" action="<%= search_redirect_path %>">
 
     <input style="height: 2.5em;
                   width: 100%;
@@ -25,4 +26,5 @@
                   box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.71);
                   " type="submit" value="<%= _('Search') %>">
 
-</form>
+  </form>
+</div>

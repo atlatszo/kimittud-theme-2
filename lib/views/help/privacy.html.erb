@@ -1,8 +1,7 @@
 <% @title = "Adatvédelmi kérdések" %>
 
-<%= render :partial => 'sidebar' %>
-
-<div id="left_column_flip">
+<%= render :partial => 'helpnav' %>
+<div class="grid_8_of_12 single left">
   <h1 id="privacy"><%= @title %></h1>
   <dl>
 
@@ -93,3 +92,4 @@ Ezen felül csak az ön által külön engedélyezett esetekben küldünk önnek
 
   <div id="hash_link_padding"></div>
 </div>
+<%= render :partial => 'sidebar' %>

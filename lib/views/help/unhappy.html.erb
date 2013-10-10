@@ -1,8 +1,9 @@
 
 <% @title = "Elégedetlen a kapott válasszal?" %>
 <% if @info_request.nil? %>
-<%= render :partial => 'sidebar' %>
-<div id="left_column_flip">
+
+<%= render :partial => 'helpnav' %>
+<div class="grid_8_of_12 single left">
 <% end %>
 
 <% if !@info_request.nil? %>
@@ -74,3 +75,4 @@
 <% if @info_request.nil? %>
 </div>
 <% end %>
+<%= render :partial => 'sidebar' %>
